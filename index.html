@@ -3,9 +3,98 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>персональний блог</title>
+	<style>
+   body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6fb; }
+   header, nav, main, footer { padding:1rem; }
+   header { background:#2b6cb0; color:#fff; text-align:center; }
+   nav ul { list-style:none; display:flex; gap:1rem; justify-content:center; padding:0; margin:0; }
+   nav a { text-decoration:none; color:#2b6cb0; font-weight:bold; }
+   article { background:#fff; margin:1rem 0; padding:1rem; border-radius:8px; }
+   aside { background:#fff; padding:1rem; margin:1rem 0; border-radius:8px; }
+   footer { background:#2b6cb0; color:#fff; text-align:center; }
+   figure { margin:1rem 0; }
+   figcaption { font-size:0.9rem; color:#555; }
+   canvas { border:1px solid #ccc; margin-top:1rem; }
+   mark { background:yellow; }
+ </style>
 </head>
 <body>
+
+  <header id="top">
+    <h1>Катерина Мазурик — Персональний блог</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#top">Головна</a></li>
+      <li><a href="#about">Про автора</a></li>
+      <li><a href="#blog">Блог</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="blog">
+      <h2>Останні записи</h2>
+
+      <article>
+        <h3>Мій перший запис</h3>
+        <time datetime="2025-09-22">22 вересня 2025</time>
+        <p>Я створила цей <mark>блог</mark>, щоб ділитися ідеями й досвідом.</p>
+        <ul>
+          <li>Мої хобі</li>
+          <li>Рецепти</li>
+          <li>Навчання</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Організація дня</h3>
+        <time datetime="2025-09-20">20 вересня 2025</time>
+        <p>Корисні поради щодо <mark>тайм-менеджменту</mark> та мотивації.</p>
+        <p><a href="#media">Перейти до мультимедіа</a></p>
+      </article>
+    </section>
+
+    <aside id="about">
+      <h2>Про автора</h2>
+      <figure>
+        <img src="assets/photo. alt="Фото Катерини" width="200">
+        <figcaption>Автор блогу</figcaption>
+      </figure>
+      <p>Мене звати Катерина. Я люблю готувати та малювати.</p>
+    </aside>
+
+    <section id="media">
+      <h2>Мультимедіа</h2>
+
+      <figure>
+        <video controls width="400 controls>
+          <source src="https://youtu.be/0qYa7zg6I4I?si=uDVTyfX1f5u8Gdq7" type="video/mp4">
+          Ваш браузер не підтримує відео.
+        </video>
+        <figcaption>Вітальне відео</figcaption>
+      </figure>
+ ні ні ні
+      <figure>
+        <audio controls>
+          <source src="audio/music.mp3" type="audio/mpeg">
+          Ваш браузер не підтримує аудіо.
+        </audio>
+        <figcaption>Музична заставка</figcaption>
+      </figure>
+
+      <canvas id="myCanvas" width="400" height="120"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Мої соцмережі: 
+      <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a> | 
+      <a href="https://t.me/yourprofile" target="_blank">Telegram</a>
+    </p>
+    <p>&copy; 2025 Катерина Мазурик</p>
+  </footer>
 
 </body>
 </html>
