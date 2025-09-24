@@ -7,12 +7,12 @@
 	<style>
    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f6fb; }
    header, nav, main, footer { padding:1rem; }
-   header { background:#2b6cb0; color:#fff; text-align:center; }
+   header { background:#8c2106; color:#fff; text-align:center; }
    nav ul { list-style:none; display:flex; gap:1rem; justify-content:center; padding:0; margin:0; }
-   nav a { text-decoration:none; color:#2b6cb0; font-weight:bold; }
+   nav a { text-decoration:none; color:#962d0d; font-weight:bold; }
    article { background:#fff; margin:1rem 0; padding:1rem; border-radius:8px; }
    aside { background:#fff; padding:1rem; margin:1rem 0; border-radius:8px; }
-   footer { background:#2b6cb0; color:#fff; text-align:center; }
+   footer { background:#5b2104; color:#fff; text-align:center; }
    figure { margin:1rem 0; }
    figcaption { font-size:0.9rem; color:#555; }
    canvas { border:1px solid #ccc; margin-top:1rem; }
@@ -57,35 +57,32 @@
     </section>
 
     <aside id="about">
-      <h2>Про автора</h2>
-      <figure>
-        <img src="assets/photo. alt="Фото Катерини" width="200">
-        <figcaption>Автор блогу</figcaption>
-      </figure>
-      <p>Мене звати Катерина. Я люблю готувати та малювати.</p>
-    </aside>
+  <h2>Про автора</h2>
+  <figure>
+    <img src="assets/photo.jpg" alt="Фото Катерини" width="200">
+    <figcaption>Автор блогу</figcaption>
+  </figure>
+  <p>Мене звати Катерина. Я люблю готувати та малювати.</p>
+</aside>
 
-    <section id="media">
-      <h2>Мультимедіа</h2>
+<section id="media">
+  <h2>Мультимедіа</h2>
 
-      <figure>
-        <video controls width="400 controls>
-          <source src="https://youtu.be/0qYa7zg6I4I?si=uDVTyfX1f5u8Gdq7" type="video/mp4">
-          Ваш браузер не підтримує відео.
-        </video>
-        <figcaption>Вітальне відео</figcaption>
-      </figure>
-	  
-      <figure>
-        <audio controls>
-          <source src="audio/music.mp3" type="audio/mpeg">
-          Ваш браузер не підтримує аудіо.
-        </audio>
-        <figcaption>Музична заставка</figcaption>
-      </figure>
+  <figure>
+  <iframe id="welcomeVideo" width="400" height="225" src="https://www.youtube.com/embed/0qYa7zg6I4I" frameborder="0" allowfullscreen></iframe>
+  <figcaption>Вітальне відео</figcaption>
+</figure>
 
-      <canvas id="myCanvas" width="400" height="120"></canvas>
-    </section>
+<figure>
+  <audio id="musicIntro" controls>
+    <source src="audio/music.mp3" type="audio/mpeg">
+    Ваш браузер не підтримує аудіо.
+  </audio>
+  <figcaption>Музична заставка</figcaption>
+</figure>
+
+  <canvas id="myCanvas" width="400" height="120"></canvas>
+</section>
   </main>
 
   <footer>
